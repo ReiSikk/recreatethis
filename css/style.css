@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f2efe9;
+  font-size: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0rem;
+}
+#wrapper {
+  margin: 1.5rem;
+}
+.shop main {
+  grid-column: 1/-1;
+}
+.shop main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 3rem;
+  padding-top: 4rem;
+}
+header h1 {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  width: 288px;
+  height: 54px;
+  text-indent: -9999px;
+}
+
+/********* NAV *********/
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+nav span {
+  padding-left: 0.5rem;
+}
+nav {
+  text-transform: uppercase;
+}
+.nav-tagline {
+  color: gray;
+}
+.nav-red {
+  color: #9b3220;
+}
+
+/* ******************* */
+
+/* ********CARDS ********* */
+.card-content {
+  padding: 1.25rem;
+}
+
+article {
+  background-color: #fff;
+  font-size: 1.125rem;
+}
+.model {
+  border-bottom: 1px solid lightgray;
+}
+.productinfo li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid beige;
+}
+.productinfo {
+  padding: 0.5rem;
+  border: 1px solid beige;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  border: 1.5px solid #9b3220;
+  width: 66%;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /*  padding-right: 0.25rem;
+  padding-left: 0.25rem; */
+}
+/* ********************** */
+
+@media only screen and (max-width: 766px) {
+  .shop main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 599px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    justify-content: center;
+  }
+  .button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .shop main {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav span {
+    visibility: hidden;
+  }
+}
