@@ -6,7 +6,7 @@ function init() {
 
 async function loadData() {
   const response = await fetch(
-    "http://mediarei.com/wp-bikes/wp-json/wp/v2/bike_model?_embed"
+    "https://mediarei.com/wp-bikes/wp-json/wp/v2/bike_model?_embed"
   );
   console.log("response", response);
   const bikeData = await response.json();
