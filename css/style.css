@@ -108,6 +108,9 @@ article {
   }
 }
 @media only screen and (max-width: 599px) {
+  .shop main {
+    grid-template-columns: 1fr;
+  }
   header {
     display: flex;
     justify-content: center;
@@ -120,9 +123,6 @@ article {
   }
 }
 @media only screen and (max-width: 499px) {
-  .shop main {
-    grid-template-columns: 1fr;
-  }
   nav {
     flex-direction: column;
     justify-content: center;
