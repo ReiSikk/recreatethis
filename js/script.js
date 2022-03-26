@@ -49,7 +49,29 @@ async function displayBike(bike) {
       "img"
     ).src = `${bike._embedded["wp:featuredmedia"][0].source_url}`;
 
+    /*    let colors = bike._embedded["wp:term"][1];
+    if (colors.length) {
+      alert("hey");
+      cloneEl.querySelector(".colours span").textContent = "";
+      const ulEl = document.createElement("ul");
+      colors.forEach((color) => {
+        const liEl = document.createElement("li");
+        liEl.style.backgroundColor = color.name;
+        ulEl.appendChild(liEl);
+      });
+      clone.querySelector(".colours span").appendChild(ulEl);
+    }
+ */
+
+    /*  showColors(); */
     const parent = document.querySelector("main");
     parent.appendChild(clone);
   });
 }
+
+/* function showColors() {
+  alert("showColors");
+  if ((document.querySelector(".colour1").textContent = "#F0EBD8")) {
+    document.querySelector(".colour1").classList.remove("hidden");
+  }
+} */

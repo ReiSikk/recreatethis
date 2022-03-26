@@ -18,6 +18,25 @@ li {
 ul {
   padding: 0rem;
 }
+.hidden {
+  visibility: hidden;
+}
+.colour1 {
+  background-color: #f0ebd8;
+}
+.colour2 {
+  background-color: #231f20;
+}
+.colour3 {
+  background-color: #bb121a;
+}
+.colour4 {
+  background-color: #4a7094;
+}
+.colour5 {
+  background-color: #99a080;
+}
+
 #wrapper {
   margin: 1.5rem;
 }
